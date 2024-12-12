@@ -101,4 +101,31 @@ structured explanation of the repository contents:
     dataset directory. Each subfolder name should correspond to its respective
     class label.
 
----
+## How to predict diseases from X-ray images with ennustus.ipynb code:
+
+### Model availability:
+
+The model should be saved in the model_checkpoints directory, e.g., as a file
+model_epoch_955.keras.
+
+### Image preparation:
+
+Images should be in a folder named uued. They should be in standard formats such
+as .jpg or .png.
+
+### Required libraries:
+
+### Install the necessary Python packages:
+
+bash Copy code pip install tensorflow numpy pillow
+
+### Code functionality:
+
+The script: Loads the model and images. Normalizes the images. Makes predictions
+for each image (COVID-19, NORMAL, PNEUMONIA, TUBERCULOSIS) and shows the
+probabilities.
+
+### Displaying results:
+
+The predictions are printed in the terminal, showing the image name, predicted
+label, and the probability for the main prediction.
