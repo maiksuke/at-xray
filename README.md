@@ -110,14 +110,15 @@ model_epoch_955.keras.
 
 ### Image preparation:
 
-Images should be in a folder named uued. They should be in standard formats such
+Images should be in a folder. In `ennustus.ipynb` change **images_folder** to the path of your pictures. They should be in standard formats such
 as .jpg or .png.
 
 ### Required libraries:
+numpy, tensorflow, pillow
 
 ### Install the necessary Python packages:
 
-bash Copy code pip install tensorflow numpy pillow
+`pip install tensorflow numpy pillow`
 
 ### Code functionality:
 
