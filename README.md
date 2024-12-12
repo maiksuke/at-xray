@@ -22,9 +22,9 @@ structured explanation of the repository contents:
 
 ---
 
-## Folder and File Structure
+### Folder and File Structure
 
-### 1. **Main Script (`main.ipynb`)**
+#### 1. **Main Script (`main.ipynb`)**
 
 -   **Purpose**: The central script for:
     -   Loading and preprocessing data
@@ -32,7 +32,7 @@ structured explanation of the repository contents:
     -   Training the model and saving checkpoints
     -   Loading a model from checkpoints
 
-### 2. **Checkpoint Directory (`model_checkpoints/`)**
+#### 2. **Checkpoint Directory (`model_checkpoints/`)**
 
 -   **Contents**: Contains saved model weights and architecture for each epoch,
     for example:
@@ -41,7 +41,7 @@ structured explanation of the repository contents:
 -   **Purpose**: Enables resuming training from a specific point or loading a
     pre-trained model for inference.
 
-### 3. **Dataset Folder (`Chest X_Ray Dataset/`)**
+#### 3. **Dataset Folder (`Chest X_Ray Dataset/`)**
 
 -   **Contents**: Images organized into class-specific subfolders:
     ```
@@ -54,13 +54,13 @@ structured explanation of the repository contents:
 -   **Purpose**: Provides the input data for training and validation. Each
     subfolder represents a class.
 
-### 4. **Model Architecture File (`model_architect.json`)**
+#### 4. **Model Architecture File (`model_architect.json`)**
 
 -   **Contents**: Description of the model architecture, including the ResNet50
     base model and custom layers.
 -   **Purpose**: Used to document or recreate the model configuration.
 
-### 5. **Prediction Script (`ennustus.ipynb`)**
+#### 5. **Prediction Script (`ennustus.ipynb`)**
 
 -   **Purpose**: A script to utilize the trained model for making predictions on
     new data.
@@ -71,31 +71,31 @@ structured explanation of the repository contents:
 
 ---
 
-## How to Use This Repository
+### How to Use This Repository
 
-### 1. **Training the Model**
+#### 1. **Training the Model**
 
 -   Run `main.ipynb` or the equivalent training script to:
     -   Preprocess the data
     -   Define the model
     -   Start training and save checkpoints
 
-### 2. **Loading and Resuming Training**
+#### 2. **Loading and Resuming Training**
 
 -   Use the checkpoint directory (`model_checkpoints/`) to load the model from a
     specific epoch. The `load_model_from_epoch` function facilitates this.
 
-### 3. **Making Predictions**
+#### 3. **Making Predictions**
 
 -   Execute `ennustus.ipynb` to load the trained model and make predictions on
     new datasets.
 
-### 4. **Customizing the Model**
+#### 4. **Customizing the Model**
 
 -   Modify the architecture in `model_architect.json` to add new layers or
     adjust the existing structure.
 
-### 5. **Dataset Organization**
+#### 5. **Dataset Organization**
 
 -   Ensure that all images are correctly organized into subfolders within the
     dataset directory. Each subfolder name should correspond to its respective
