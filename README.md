@@ -1,4 +1,4 @@
-# Chest x-ray
+# Disease Detection from Chest X-rays
 
 ## Authors
 
